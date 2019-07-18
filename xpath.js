@@ -5,10 +5,10 @@ var HREF_TEMPLATE = "href='[0]'",
 function _getXPathFormat(e) {
     var format;
 
-    if (e.target.pathname !== undefined && e.target.pathname !== "")
-        format = HREF_TEMPLATE.replace("[0]", e.target.pathname);
-    else if (e.target.id !== undefined && e.target.id !== "")
+    if (e.target.id !== undefined && e.target.id !== "")
         format = ID_TEMPLATE.replace("[0]", e.target.id);
+    else if (e.target.pathname !== undefined && e.target.pathname !== "")
+        format = HREF_TEMPLATE.replace("[0]", e.target.pathname);
     else
         format = CLASS_TEMPLATE.replace("[0]", e.target.className);
 
