@@ -22,10 +22,3 @@ $(document).click(function(e) {
 
     console.log(xPath);
 });
-
-
-// var script = document.createElement('script');
-// script.src = '/xpath.js';
-// script.type = 'text/javascript';
-// document.getElementsByTagName('head')[0].appendChild(script);
-//test
