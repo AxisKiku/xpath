@@ -17,6 +17,7 @@ function _getXPathFormat(e) {
 
 $(document).click(function(e) {
     e.preventDefault();
+    e.stopPropagation();
     xPath = "$x(\"//*[@[0]]\")".replace("[0]", _getXPathFormat(e));
 
     console.log(xPath);
